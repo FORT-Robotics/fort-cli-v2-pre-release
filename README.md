@@ -22,6 +22,22 @@ Run the following command to list all attached devices:
 +--------------+------------+-----------+------------+
 ```
 
+The device lise can also be outputted as a JSON object.
+
+```base
+./fortcli device list --json
+```
+
+```test
+[
+  {
+    "connId": "/dev/ttyACM0",
+    "modelName": "NSCP 1003",
+    "interface": "USB",
+    "serialNumber": "WBJFU8CNE6"
+  }
+]
+```
 
 ---
 
