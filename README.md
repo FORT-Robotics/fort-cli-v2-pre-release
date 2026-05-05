@@ -86,7 +86,7 @@ You can update your device configuration automatically or manually download and 
 The `update` command downloads the latest configuration from FORT Manager and applies it to the device in one step.
 
 ```bash
-./fortcli device configuration update <SERIAL_NUMBER> -u nscpro
+./fortcli device configuration update <SERIAL_NUMBER> 
 ```
 
 ### Option B: Manual Download & Apply
@@ -104,7 +104,7 @@ This saves the configuration file (e.g., `FORT_WBJFU8CNE6.cbor`) to your current
 Apply the downloaded file to the device.
 
 ```bash
-./fortcli device configuration apply <SERIAL_NUMBER> -f <FILENAME.cbor> -u nscpro
+./fortcli device configuration apply <SERIAL_NUMBER> -f <FILENAME.cbor>
 ```
 
 ---
@@ -118,7 +118,7 @@ Keep your device running efficiently by ensuring it is on the latest firmware.
 The `update` command fetches the latest firmware bundle and installs it on your device immediately.
 
 ```bash
-./fortcli device firmware update <SERIAL_NUMBER> -u nscpro
+./fortcli device firmware update <SERIAL_NUMBER> 
 ```
 
 ### Option B: Manual Download & Apply
@@ -136,7 +136,7 @@ This downloads the firmware bundle (e.g., `4.0.1-NSC.zip`) to your current direc
 Install the specific firmware bundle onto the device.
 
 ```bash
-./fortcli device firmware apply <SERIAL_NUMBER> -f <FILENAME.zip> -u nscpro
+./fortcli device firmware apply <SERIAL_NUMBER> -f <FILENAME.zip>
 ```
 
 > **Note:** The device will automatically reboot after a successful configuration or firmware update.
